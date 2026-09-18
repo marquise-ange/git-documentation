@@ -184,3 +184,58 @@ git reset can move the branch pointer backward and can be dangerous when used on
 Documentation
 
 Git revert is useful when a previous change needs to be undone without deleting the project's history. Instead of removing the old commit, Git creates a new commit that reverses its changes. This approach is safer for collaborative repositories because other team members may already have the original commit.
+
+6. Git Cherry-pick
+What is Git Cherry-pick?
+
+git cherry-pick allows you to take one specific commit from another branch and apply it to your current branch.
+
+This is useful when you need one particular change but do not want to merge the entire branch.
+
+Find the commit
+git log --oneline
+
+Example:
+
+a123456 Add contact form
+b789012 Update homepage
+
+Switch to the branch where you want the change:
+
+git switch main
+
+Cherry-pick the required commit:
+
+git cherry-pick a123456
+Example
+
+Suppose your partner has:
+
+partner branch
+    |
+    ├── Add homepage
+    ├── Add contact form
+    └── Add footer
+
+You only need the contact form.
+
+You can use:
+
+git cherry-pick <contact-form-commit>
+
+You get the contact-form changes without merging the entire partner branch.
+
+If a conflict occurs
+
+Git may stop and ask you to resolve the conflict.
+
+After fixing the files:
+
+git add .
+git cherry-pick --continue
+
+To cancel the cherry-pick:
+
+git cherry-pick --abort
+Documentation
+Cherry-pick is useful in collaborative development when a specific commit from another branch is needed. Instead of merging all changes from the branch, the developer can select and apply only the required commit. This gives developers more control over which changes are introduced into their branch.
