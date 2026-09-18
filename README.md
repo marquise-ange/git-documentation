@@ -38,3 +38,38 @@ git init
 
 ### Syntax
 git status
+
+---
+
+## 7. Git Branches
+
+### Description
+
+A branch is a separate line of development in a Git repository. Branches allow developers to work on features or changes without directly affecting the main branch.
+
+### View Branches
+
+git branch
+Create a Branch
+git branch feature-login
+Switch to a Branch
+git switch feature-login
+Create and Switch to a New Branch
+git switch -c feature-login
+
+Use Case
+
+Branches are useful when different developers need to work on different features at the same time.
+
+8. Git Merge
+Description
+
+git merge combines changes from one branch into another branch.
+
+Syntax
+
+git merge <branch-name>
+Example
+
+git switch main
+git merge feature-login
