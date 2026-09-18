@@ -82,7 +82,6 @@ A remote repository is a version of a Git repository hosted on another server, s
 
 ### Add a Remote
 
-```bash
 git remote add origin <repository-url>
 View Remotes
 git remote -v
@@ -118,9 +117,7 @@ Use Case
 
 Use git pull to update your local project with the latest changes from GitHub.
 
----
-
-## 12. Git Fetch
+ 12. Git Fetch
 
 ### Description
 
@@ -130,9 +127,7 @@ Use git pull to update your local project with the latest changes from GitHub.
 
 git fetch origin
 
----
-
-## 15. Merge Conflicts
+ 13. Merge Conflicts
 
 ### Description
 
@@ -142,3 +137,15 @@ A merge conflict happens when Git cannot automatically combine changes from diff
 
 git switch main
 git merge feature-branch
+
+
+14. Undoing Changes
+
+### Description
+
+Git provides commands that allow developers to undo changes when something goes wrong.
+
+### Discard Changes in a File
+
+
+git restore <file>
