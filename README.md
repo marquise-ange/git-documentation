@@ -271,3 +271,63 @@ git push -u origin flora
 Documentation
 
 Remote branches allow collaborators to share and access different lines of development on GitHub. Developers can use git fetch to obtain information about changes made remotely, inspect remote branches, and create local branches from them. This is important when multiple team members are working on the same repository.
+
+8. GitHub Issues & Discussions
+GitHub Issues
+What are Issues?
+
+GitHub Issues are used to track tasks, bugs, improvements, and other work related to a project.
+
+Examples:
+
+Issue #1: Fix navigation menu
+Issue #2: Add contact page
+Issue #3: Improve mobile responsiveness
+Typical Issue information
+
+An issue can contain:
+
+Title
+Description
+Labels
+Assignee
+Comments
+Status
+Example
+
+Title:
+
+Add responsive navigation
+
+Description:
+
+The navigation menu does not display correctly
+on small screens. Update the CSS to make it responsive.
+Why Issues are useful
+
+They help the team:
+
+Organize tasks
+Report bugs
+Assign work
+Track progress
+Discuss solutions
+GitHub Discussions
+
+GitHub Discussions are designed for conversations and questions that do not necessarily represent a specific task or bug.
+
+Examples:
+
+Question: Should we use CSS Grid or Flexbox?
+Idea: Add a dark mode to the website
+General: Project structure discussion
+Issues vs Discussions
+Issues	Discussions
+Track specific work	General conversation
+Bugs	Questions
+Tasks	Ideas
+Feature requests	Community discussion
+Work assignments	Sharing knowledge
+Documentation
+
+GitHub Issues and Discussions support communication between collaborators. Issues are mainly used to organize actionable work such as bugs and features, while Discussions are useful for questions, ideas, and broader conversations. Using these tools makes project communication more organized and transparent.
