@@ -118,4 +118,14 @@ Use Case
 
 Use git pull to update your local project with the latest changes from GitHub.
 
+---
 
+## 12. Git Fetch
+
+### Description
+
+`git fetch` downloads the latest information from a remote repository without merging the changes into the current branch.
+
+### Syntax
+
+git fetch origin
