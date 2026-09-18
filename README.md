@@ -149,3 +149,42 @@ Git provides commands that allow developers to undo changes when something goes 
 
 
 git restore <file>
+
+
+
+ 15. Advanced Git Commands
+
+### Git Rebase
+
+`git rebase` moves or reapplies commits onto another branch.
+
+
+git rebase main
+Git Log
+
+git log displays the commit history of a repository.
+
+git log --oneline
+Git Diff
+
+git diff shows the differences between changes.
+
+git diff
+Git Reset
+
+git reset can move the current branch to another commit.
+
+git reset --soft HEAD~1
+Use Case
+
+Advanced Git commands are useful for managing commit history, reviewing changes, and organizing work more efficiently.
+
+20. Git Best Practices
+Write clear and meaningful commit messages.
+Commit changes regularly.
+Create separate branches for different features.
+Pull the latest changes before starting new work.
+Review changes before creating a Pull Request.
+Avoid committing unnecessary files.
+Communicate with team members when working on shared files.
+
