@@ -105,3 +105,34 @@ git commit -m "Add Flora's contribution"
 Documentation
 
 Branches help collaborators work independently without interfering with the main project. git checkout can switch branches and perform some other operations, while git switch is specifically designed for branch switching. Using separate branches makes collaboration safer and makes it easier to review changes before merging them.
+
+4. Git Tag
+What is a Git tag?
+
+A Git tag is a label attached to a specific commit. Tags are commonly used to identify important versions or releases of a project.
+
+For example:
+
+v1.0.0
+v1.1.0
+v2.0.0
+Create a tag
+git tag v1.0.0
+View tags
+git tag
+Push a tag to GitHub
+git push origin v1.0.0
+
+Or push all tags:
+
+git push origin --tags
+View information about a tag
+git show v1.0.0
+Annotated tag
+
+A more detailed tag can be created with:
+
+git tag -a v1.0.0 -m "First project release"
+Documentation
+
+Git tags provide permanent labels for important points in the project's history. For example, after completing the first version of a project, the team can create v1.0.0. This makes it easy to identify and return to important versions later
