@@ -129,3 +129,16 @@ Use git pull to update your local project with the latest changes from GitHub.
 ### Syntax
 
 git fetch origin
+
+---
+
+## 15. Merge Conflicts
+
+### Description
+
+A merge conflict happens when Git cannot automatically combine changes from different branches.
+
+### Example
+
+git switch main
+git merge feature-branch
