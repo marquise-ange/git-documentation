@@ -36,3 +36,37 @@ Documentation
 
 The initial contribution represents the first working version of the project. The files are added to Git's staging area and committed to create a permanent record. The commit can then be pushed to GitHub so that other collaborators can access the project.
 
+2. Git Clone & Configuration
+What is Git Clone?
+
+git clone is used to create a local copy of a repository that already exists on GitHub or another Git server.
+
+Command
+git clone https://github.com/username/repository.git
+
+This downloads the repository, including its files and Git history.
+
+Example
+git clone https://github.com/marquise-ange/team-collaboration.git
+
+Then enter the project:
+
+cd team-collaboration
+Git Configuration
+
+Before working with Git, you should configure your name and email.
+
+git config --global user.name "Iradukunda Flora"
+git config --global user.email "your-email@example.com"
+
+To check the configuration:
+
+git config --global --list
+Why configuration is important
+
+Git uses your name and email to identify the person who created each commit.
+
+Documentation
+
+Cloning allows a collaborator to obtain an existing project from GitHub and work on it locally. Git configuration identifies the developer responsible for commits. After cloning and configuring Git, the developer can create branches, modify files, commit changes, and synchronize the work with GitHub.
+
