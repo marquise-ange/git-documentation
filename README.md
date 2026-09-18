@@ -28,3 +28,13 @@ A Git repository is a project folder that Git tracks.
 ### Create a Repository
 
 git init
+
+
+## 4. Git Status
+
+### Description
+
+"git status" shows the current state of the working directory and staging area.
+
+### Syntax
+git status
