@@ -136,3 +136,51 @@ git tag -a v1.0.0 -m "First project release"
 Documentation
 
 Git tags provide permanent labels for important points in the project's history. For example, after completing the first version of a project, the team can create v1.0.0. This makes it easy to identify and return to important versions later
+
+5. Git Revert
+What is Git Revert?
+
+git revert is used to undo the effect of a previous commit while keeping the existing Git history.
+
+This is particularly useful when a commit has already been pushed to GitHub and should be undone safely.
+
+Find commits
+git log --oneline
+
+Example:
+
+abc1234 Add contact page
+def5678 Add homepage
+
+To revert the first commit:
+
+git revert abc1234
+
+Git creates a new commit that reverses the changes made by the selected commit.
+
+Example
+
+Suppose you accidentally committed:
+
+Add broken navigation
+
+You can use:
+
+git revert <commit-hash>
+
+Then push:
+
+git push
+Revert vs Reset
+
+git revert:
+
+Old commit → New revert commit
+
+The history remains.
+
+git reset can move the branch pointer backward and can be dangerous when used on shared branches.
+
+Documentation
+
+Git revert is useful when a previous change needs to be undone without deleting the project's history. Instead of removing the old commit, Git creates a new commit that reverses its changes. This approach is safer for collaborative repositories because other team members may already have the original commit.
