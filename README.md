@@ -239,3 +239,35 @@ To cancel the cherry-pick:
 git cherry-pick --abort
 Documentation
 Cherry-pick is useful in collaborative development when a specific commit from another branch is needed. Instead of merging all changes from the branch, the developer can select and apply only the required commit. This gives developers more control over which changes are introduced into their branch.
+
+7. Git Remote Branches
+What is a remote branch?
+
+A remote branch is a branch that exists on a remote repository such as GitHub.
+
+For example:
+
+origin/main
+origin/flora
+origin/partner
+
+origin normally refers to the GitHub repository from which the project was cloned.
+
+View local branches
+git branch
+View remote branches
+git branch -r
+View all branches
+git branch -a
+Download information about remote branches
+git fetch origin
+
+fetch updates your local knowledge of the remote repository without automatically changing your current files.
+
+Create a local branch from a remote branch
+git switch -c partner origin/partner
+Push a local branch
+git push -u origin flora
+Documentation
+
+Remote branches allow collaborators to share and access different lines of development on GitHub. Developers can use git fetch to obtain information about changes made remotely, inspect remote branches, and create local branches from them. This is important when multiple team members are working on the same repository.
