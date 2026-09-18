@@ -73,3 +73,49 @@ Example
 
 git switch main
 git merge feature-login
+
+## 9. Git Remote
+
+### Description
+
+A remote repository is a version of a Git repository hosted on another server, such as GitHub.
+
+### Add a Remote
+
+```bash
+git remote add origin <repository-url>
+View Remotes
+git remote -v
+Use Case
+
+Use a remote repository to connect your local project to GitHub and share your work with others.
+
+10. Git Push
+Description
+
+git push uploads local commits to a remote repository.
+
+Syntax
+git push origin <branch-name>
+Example
+git push origin main
+Use Case
+
+Use git push to send your local commits to GitHub.
+
+11. Git Pull
+Description
+
+git pull downloads the latest changes from a remote repository and integrates them into the current branch.
+
+Syntax:
+git pull origin main
+
+Example:
+git switch main
+git pull origin main
+Use Case
+
+Use git pull to update your local project with the latest changes from GitHub.
+
+
