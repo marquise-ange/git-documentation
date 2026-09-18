@@ -331,3 +331,60 @@ Work assignments	Sharing knowledge
 Documentation
 
 GitHub Issues and Discussions support communication between collaborators. Issues are mainly used to organize actionable work such as bugs and features, while Discussions are useful for questions, ideas, and broader conversations. Using these tools makes project communication more organized and transparent.
+
+9. GitHub Forks & Collaboration
+What is a fork?
+
+A fork is a personal copy of another person's GitHub repository under your own GitHub account.
+
+For example:
+
+Original repository
+        ↓
+Your fork
+        ↓
+Your local clone
+Typical workflow
+
+First, fork the repository on GitHub.
+
+Then clone your fork:
+
+git clone https://github.com/your-username/project.git
+
+Enter the project:
+
+cd project
+
+Create a branch:
+
+git switch -c flora
+
+Make your changes:
+
+git add .
+git commit -m "Add project documentation"
+
+Push your branch:
+
+git push -u origin flora
+
+Then you can create a Pull Request to propose your changes to the original repository.
+
+Upstream repository
+
+If you want to keep your fork synchronized with the original repository, you can add the original repository as upstream:
+
+git remote add upstream https://github.com/original-owner/project.git
+
+Check remotes:
+
+git remote -v
+
+Fetch updates:
+
+git fetch upstream
+Documentation
+
+Forks allow developers to contribute to repositories when they do not have direct write access to the original repository. A developer can fork the project, make changes in a separate branch, push the changes to their fork, and create a Pull Request for the original repository. This workflow is commonly used for open-source collaboration.
+
