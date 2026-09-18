@@ -70,3 +70,38 @@ Documentation
 
 Cloning allows a collaborator to obtain an existing project from GitHub and work on it locally. Git configuration identifies the developer responsible for commits. After cloning and configuring Git, the developer can create branches, modify files, commit changes, and synchronize the work with GitHub.
 
+3. Git Checkout & Switch
+What is a branch?
+
+A branch is a separate line of development. It allows developers to work on features without directly changing the main branch.
+
+git checkout
+
+git checkout can be used to switch between branches.
+
+git checkout flora
+
+It can also create and switch to a new branch:
+
+git checkout -b flora
+git switch
+
+git switch is the newer and more focused command for changing branches.
+
+git switch flora
+
+Create and switch to a new branch:
+
+git switch -c flora
+Check branches
+git branch
+Example workflow
+git switch -c flora
+
+Make changes, then:
+
+git add .
+git commit -m "Add Flora's contribution"
+Documentation
+
+Branches help collaborators work independently without interfering with the main project. git checkout can switch branches and perform some other operations, while git switch is specifically designed for branch switching. Using separate branches makes collaboration safer and makes it easier to review changes before merging them.
